@@ -1,0 +1,123 @@
+/* PALETTE COLORI
+SFONDO HTML: #1f1f1f;
+SFONDO CONTAINER: #141414;
+VERDE PULSANTI: #c4f82a;
+button grey: #333333;
+button green: #c4f82a;
+*/
+
+@font-face {
+
+    @font-face {
+        font-family: 'Inter';
+        src: url('../fonts/Inter-VariableFont_slnt,wght.ttf') format('truetype');
+        font-weight: 100 900;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Inter';
+        src: url('../fonts/static/Inter-Bold.ttf') format('truetype');
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Inter';
+        src: url('../fonts/static/Inter-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: 'Inter';
+        src: url('../fonts/static/Inter-SemiBold.ttf') format('truetype');
+        font-weight: 600;
+        font-style: normal;
+    }
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    background-color: #141414;
+    color: #ffffff;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    align-items: center;
+    font-weight: normal;
+    background-color: #1f1f1f;
+    padding: 20px;
+    margin: 20px;
+    /* margin: 0 auto; */
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5%;
+}
+.contenitore{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img{
+    border-radius: 50%;
+    margin-bottom: 24px;
+}
+.container h1{
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+.container h3{
+    font-weight: bold;
+    font-size: 18px;
+    color: #c4f82a;
+    margin-bottom: 8px;
+}
+.container p{
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.pulsanti{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-wrap: wrap; /* Permette ai pulsanti di andare a capo se necessario */
+    gap: 10px; /* Spazio tra i pulsanti */
+    padding: 20px; /* Aggiunge un po' di padding intorno ai pulsanti */
+    /* height: 100vh; Centra verticalmente nella pagina intera */
+}
+.pulsanti > button {
+    width: 80%;
+    max-width: 300px;
+    background-color: #333333;
+    color: #c4f82a;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.pulsanti>button:hover{
+    background-color: #c4f82a;
+    color: #333333;
+}
